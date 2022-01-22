@@ -19,7 +19,7 @@ def ProcessMessage(ch, method, properties, body):
     j = json.loads(body.decode())
     metric = j["Metric"]
     msg = j["Msg"]
-    ts = j["ts"]
+    ts = j["Ts"]
     frmtmsg = "{} {} {}\n".format(metric, str(msg), ts).encode('utf-8')
     sock = socket.socket()
     sock.connect((GRPHT_S, GRPHT_P))
