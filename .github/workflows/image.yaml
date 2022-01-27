@@ -28,4 +28,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ryanabelanger/stake_mtrc_cnsmr:latest,ryanabelanger/stake_mtrc_cnsmr:0.6.3
+          tags: ryanabelanger/stake_mtrc_cnsmr:latest,ryanabelanger/stake_mtrc_cnsmr:0.6.4

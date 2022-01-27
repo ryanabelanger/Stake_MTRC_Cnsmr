@@ -9,7 +9,7 @@ import socket
 GRPHT_S = 'graphite'
 GRPHT_P = 2003
 
-connection = pika.BlockingConnection(pika.ConnectionParameters('stake-exchange', connection_attempts=12, retry_delay=5))
+connection = pika.BlockingConnection(pika.ConnectionParameters('localhost', connection_attempts=12, retry_delay=5))
 GrphtQueue = connection.channel()
 GrphtQueue.queue_declare(queue='Grpht_Queue', durable=True)
 
